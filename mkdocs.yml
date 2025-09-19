@@ -1,0 +1,7 @@
+site_name: Distributed Sync
+repo_url: https://github.com/soumadip/sdb-distributed-sync
+theme:
+    name: material
+nav:
+    - Home: index.md
+    - Architecture: architecture.md
