@@ -40,5 +40,5 @@
 # debug information files
 *.dwo
 
-#vim specific temp files
+#vim specific undo files
 *.un~
