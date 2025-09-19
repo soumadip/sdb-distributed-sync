@@ -43,7 +43,5 @@
 #vim specific undo files
 *.un~
 requirements.sublime-workspace
-server/__pycache__/server.cpython-38.pyc
-*.pyc
-*.pyc
+*__pycache__
 *.pyc
