@@ -42,3 +42,4 @@
 
 #vim specific undo files
 *.un~
+requirements.sublime-workspace
