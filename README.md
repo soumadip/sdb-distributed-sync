@@ -35,7 +35,7 @@ A lightweight distributed file synchronization system that demonstrates
 ## Quick Start
 ```bash
 # Clone repo
-git clone https://github.com/<your-username>/distributed-sync.git
+git clone https://github.com/soumadip/sdb-distributed-sync.git
 cd distributed-sync
 
 # Install dependencies
@@ -61,7 +61,7 @@ python client/main.py download sample.txt
 
 You can try the CLI by cloning the repo:
 ```bash
-git clone https://github.com/YOUR-USERNAME/distributed-sync.git
+git clone https://github.com/soumadip/sdb-distributed-sync.git
 cd distributed-sync
 pip install -r requirements.txt
 python server/server.py
@@ -93,7 +93,7 @@ pytest tests/
 ---
 
 ## Live Showcase
-👉 Visit the [Project Page](https://soumadip.github.io/distributed-sync/)  
+👉 Visit the [Project Page](https://soumadip.github.io/sdb-distributed-sync/)  
 (to be set up with GitHub Pages)
 
 ---
