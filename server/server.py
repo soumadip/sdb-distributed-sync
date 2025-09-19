@@ -2,6 +2,7 @@ from fastapi import FastAPI, UploadFile, File
 import os
 import uvicorn
 from .config import settings
+from pathlib import Path
 
 app = FastAPI()
 UPLOAD_DIR = "files"
@@ -13,6 +14,13 @@ async def upload(file: UploadFile = File(...)):
     with open(filepath, "wb") as f:
         f.write(await file.read())
     return {"status": "success", "filename": file.filename}
+
+@app.get("/download/{filename}")
+async def download_file(filename: str):
+    file_path = UPLOAD_DIR / filename
+    if file_path.exists():
+        return FileResponse(path=file_path, filename=filename, media_type="application/octet-stream")
+    return {"error": "File not found"}
 
 @app.on_event("startup")
 async def startup_event():
